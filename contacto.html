@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="contacto.css">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -20,21 +21,44 @@
         </nav>
     </header>
 
-    <section id="contacto" class="section contact">
-        <h2>Contacto</h2>
-        <form action="#" method="post">
-            <label for="nombre">Nombre:</label>
-            <input type="text" id="nombre" name="nombre" required>
+     <!-- Sección de Contacto -->
+     <section id="contacto" class="section contact">
+        <div class="container">
+            <h2>Contáctanos</h2>
+            <div class="contact-form">
+                <form id="contactForm" action="https://formsubmit.co/torresjeanfranco17@gmail.com" method="POST">
+                    <input type="hidden" name="_captcha" value="false">
     
-            <label for="email">Correo Electrónico:</label>
-            <input type="email" id="email" name="email" required>
+                    <div class="form-group">
+                        <label for="nombre">Nombre:</label>
+                        <input type="text" id="nombre" name="nombre" required>
+                    </div>
     
-            <label for="mensaje">Mensaje:</label>
-            <textarea id="mensaje" name="mensaje" required></textarea>
+                    <div class="form-group">
+                        <label for="apellido">Apellido:</label>
+                        <input type="text" id="apellido" name="apellido" required>
+                    </div>
     
-            <button type="submit" class="btn">Enviar</button>
-        </form>
+                    <div class="form-group">
+                        <label for="dni">DNI:</label>
+                        <input type="text" id="dni" name="dni" required>
+                    </div>
+    
+                    <div class="form-group">
+                        <label for="descripcion">Describir:</label>
+                        <textarea id="descripcion" name="descripcion" rows="5" required></textarea>
+                    </div>
+    
+                    <button type="submit" class="submit-btn">Enviar Mensaje</button>
+                </form>
+            </div>
+        </div>
     </section>
+
+    <script src="scrip.js"></script>
+    <!-- Script de Bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz4fnFO9gyb6tJ6Y4cUgWzFzHmdGgD99Yw7hz8qLOr3l6Drnk+UyjLO6tk" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js" integrity="sha384-pzjw8f+ua7Kw1TIq0yMiI4SPxIj2bXwB3pXv0EHzlqWb70gtZHyMFYbMfFhbJ4B" crossorigin="anonymous"></script>
 </body>
 </html>
 
