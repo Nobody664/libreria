@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LibroStore - Tienda de Libros Online</title>
+    <link rel="stylesheet" href="/Styles/style.css">
+    <link rel="stylesheet" href="/Styles/footer.css">
+</head>
+
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="logo">LibroStore</div>
+            <ul class="nav-links">
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="libros.html">Libros</a></li>
+                <li><a href="nosotros.html">Nosotros</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+                <li><a href="carritocompras.html">Carrito (<span id="carrito-count">0</span>)</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="inicio" class="section welcome">
+        <h1>Bienvenido a LibroStore</h1>
+        <p>La mejor tienda online para tus libros favoritos. ¡Compra ahora y empieza tu aventura literaria!</p>
+        <a href="libros.html" class="btn">Ver libros</a>
+    </section>
+
+
+    <section id="libros" class="section books">
+        <h2>Libros Destacados</h2>
+    
+        <div class="books-grid">
+            <div class="book-item" data-id="1" data-titulo="El Gran Gatsby" data-precio="15.99">
+                <img src="https://imgs.search.brave.com/3rDFSMTIfllRCAu_f8SK6cSnCBD02O7Px1LtDn7Qj1k/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9zMy5l/dS1jZW50cmFsLTEu/YW1hem9uYXdzLmNv/bS9zdHVkeXNtYXJ0/ZXItbWVkaWFmaWxl/cy9tZWRpYS8xODY1/NTc2L3N1bW1hcnlf/aW1hZ2VzL1RoZV9H/cmVhdF9HYXRzYnlf/Q292ZXJfMTkyNV9S/ZXRvdWNoZWRfMS53/ZWJwP1gtQW16LUFs/Z29yaXRobT1BV1M0/LUhNQUMtU0hBMjU2/JlgtQW16LUNyZWRl/bnRpYWw9QUtJQTRP/TERVREU0MlVaSEFJ/RVQvMjAyNTA0MjQv/ZXUtY2VudHJhbC0x/L3MzL2F3czRfcmVx/dWVzdCZYLUFtei1E/YXRlPTIwMjUwNDI0/VDA5MTg0OFomWC1B/bXotRXhwaXJlcz02/MDQ4MDAmWC1BbXot/U2lnbmVkSGVhZGVy/cz1ob3N0JlgtQW16/LVNpZ25hdHVyZT1i/M2Y1NzdhYjRlODEw/MWRmNmVlZTFiNzAx/YTIwNGIyNTZhZGE4/ZDdmY2UyODE0ODg4/NWRmMDgxYzNhYjhi/OWMw" alt="Libro 1">
+                <h3 class="titulo-libro">El Gran Gatsby</h3>
+                <p>Autor: F. Scott Fitzgerald</p>
+                <p class="precio-libro">S/ 15.99</p>
+                <button class="btn-añadir">Añadir al carrito</button>
+            </div>
+    
+            <div class="book-item" data-id="2" data-titulo="1984" data-precio="12.99">
+                <img src="https://via.placeholder.com/150x200" alt="Libro 2">
+                <h3 class="titulo-libro">1984</h3>
+                <p>Autor: George Orwell</p>
+                <p class="precio-libro">S/ 15.99</p>
+                <button class="btn-añadir">Añadir al carrito</button>
+            </div>
+    
+            <div class="book-item" data-id="3" data-titulo="Cien Años de Soledad" data-precio="18.99">
+                <img src="https://via.placeholder.com/150x200" alt="Libro 3">
+                <h3 class="titulo-libro">Cien Años de Soledad</h3>
+                <p>Autor: Gabriel García Márquez</p>
+                <p class="precio-libro">S/ 15.99</p>
+                <button class="btn-añadir">Añadir al carrito</button>
+            </div>
+    
+            <div class="book-item" data-id="4" data-titulo="El Alquimista" data-precio="13.49">
+                <img src="https://via.placeholder.com/150x200" alt="Libro 4">
+                <h3 class="titulo-libro">El Alquimista</h3>
+                <p>Autor: Paulo Coelho</p>
+                <p class="precio-libro">S/ 15.99</p>
+                <button class="btn-añadir">Añadir al carrito</button>
+            </div>
+    
+            <div class="book-item" data-id="5" data-titulo="Don Quijote de la Mancha" data-precio="16.75">
+                <img src="https://via.placeholder.com/150x200" alt="Libro 5">
+                <h3 class="titulo-libro">Don Quijote de la Mancha</h3>
+                <p>Autor: Miguel de Cervantes</p>
+                <p class="precio-libro">S/ 15.99</p>
+                <button class="btn-añadir">Añadir al carrito</button>
+            </div>
+    
+            <div class="book-item" data-id="6" data-titulo="La Sombra del Viento" data-precio="14.95">
+                <img src="https://via.placeholder.com/150x200" alt="Libro 6">
+                <h3 class="titulo-libro">La Sombra del Viento</h3>
+                <p>Autor: Carlos Ruiz Zafón</p>
+                <p class="precio-libro">S/ 15.99</p>
+                <button class="btn-añadir">Añadir al carrito</button>
+            </div>
+        </div>
+    </section>
+
+
+    <footer>
+        <div class="container">
+            <div class="footer-company">
+                <h3>LibroStore</h3>
+                <p>Tu destino en línea para descubrir y adquirir los mejores libros. Nos apasiona la lectura y queremos compartir esa pasión contigo.</p>
+            </div>
+            <div class="footer-contact">
+                <h3>Contáctanos</h3>
+                <p>Dirección: Av. Principal 123, Lima - Perú</p>
+                <p>Teléfono: +51 999 888 777</p>
+                <p>Email: info@librostore.com</p>
+            </div>
+            
+            <div class="footer-social">
+                <h3>Síguenos</h3>
+                <a href="#" target="_blank"><img src="/images/facebook.png" alt="Facebook"></a>
+                <a href="#" target="_blank"><img src="/images/instagram.png" alt="Twitter"></a>
+                <a href="#" target="_blank"><img src="/images/twitter.png" alt="Instagram"></a>
+            </div>
+            <div class="footer-copyright">
+                <p>&copy; 2025 LibroStore. Todos los derechos reservados.</p>
+                <p>Desarrollado por [Tu Nombre o Empresa]</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="/Scripts/carrito.js"></script>
+</body>
+
+</html>

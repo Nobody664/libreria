@@ -6,6 +6,7 @@
     background-color: #fff;
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding-top: 60px;
 }
 
 .book-list-section h1 {
@@ -90,4 +91,57 @@
 
 .view-details-btn:hover {
     background-color: #1a252f;
+}
+
+/* Estilos para la tarjeta de detalles */
+.details-card {
+    display: none; /* Inicialmente oculto */
+    position: absolute; /* Para que se superponga al contenido */
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    z-index: 10; /* Para que esté por encima de otros elementos */
+    text-align: left;
+}
+
+.details-card h4 {
+    margin-top: 0;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.details-card p {
+    color: #666;
+    margin-bottom: 8px;
+}
+
+.close-details-btn {
+    background-color: #e74c3c;
+    color: white;
+    border: none;
+    padding: 8px 15px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 0.9em;
+    transition: background-color 0.3s;
+    margin-top: 15px;
+}
+
+.close-details-btn:hover {
+    background-color: #c0392b;
+}
+
+/* Asegúrate de que .book-card tenga position: relative; para que .details-card se posicione correctamente dentro */
+.book-card {
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 15px;
+    text-align: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+    position: relative; /* Añade esta línea */
 }
