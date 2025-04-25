@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LibroStore - Tienda de Libros Online</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="logo">LibroStore</div>
+            <ul class="nav-links">
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="libros.html">Libros</a></li>
+                <li><a href="nosotros.html">Nosotros</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+                <li><a href="carritocompras.html">Carrito (<span id="carrito-count">0</span>)</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Sección de bienvenida -->
+    <section id="inicio" class="section welcome">
+        <h1>Bienvenido a LibroStore</h1>
+        <p>La mejor tienda online para tus libros favoritos. ¡Compra ahora y empieza tu aventura literaria!</p>
+        <a href="#libros" class="btn">Ver libros</a>
+    </section>
+
+    <section id="libros" class="section books">
+        <h2>Libros Destacados</h2>
+        <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <div class="d-flex justify-content-around">
+                        <div class="book-item" data-id="1" data-titulo="El Gran Gatsby" data-precio="15.99">
+                            <img src="https://via.placeholder.com/150x200" alt="Libro 1" class="img-fluid">
+                            <h3>El Gran Gatsby</h3>
+                            <p>Autor: F. Scott Fitzgerald</p>
+                            <p class="price">$15.99</p>
+                            <a href="#" class="btn btn-sm btn-outline-secondary add-to-cart">Añadir al carrito</a>
+                        </div>
+                        <div class="book-item" data-id="2" data-titulo="1984" data-precio="12.99">
+                            <img src="https://via.placeholder.com/150x200" alt="Libro 2" class="img-fluid">
+                            <h3>1984</h3>
+                            <p>Autor: George Orwell</p>
+                            <p class="price">$12.99</p>
+                            <a href="#" class="btn btn-sm btn-outline-secondary add-to-cart">Añadir al carrito</a>
+                        </div>
+                        <div class="book-item" data-id="3" data-titulo="To Kill a Mockingbird" data-precio="14.99">
+                            <img src="https://via.placeholder.com/150x200" alt="Libro 3" class="img-fluid">
+                            <h3>To Kill a Mockingbird</h3>
+                            <p>Autor: Harper Lee</p>
+                            <p class="price">$14.99</p>
+                            <a href="#" class="btn btn-sm btn-outline-secondary add-to-cart">Añadir al carrito</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="d-flex justify-content-around">
+                        <div class="book-item" data-id="4" data-titulo="Cien años de soledad" data-precio="18.50">
+                            <img src="https://via.placeholder.com/150x200" alt="Libro 4" class="img-fluid">
+                            <h3>Cien años de soledad</h3>
+                            <p>Autor: Gabriel García Márquez</p>
+                            <p class="price">$18.50</p>
+                            <a href="#" class="btn btn-sm btn-outline-secondary add-to-cart">Añadir al carrito</a>
+                        </div>
+                        <div class="book-item" data-id="5" data-titulo="Don Quijote de la Mancha" data-precio="22.00">
+                            <img src="https://via.placeholder.com/150x200" alt="Libro 5" class="img-fluid">
+                            <h3>Don Quijote de la Mancha</h3>
+                            <p>Autor: Miguel de Cervantes</p>
+                            <p class="price">$22.00</p>
+                            <a href="#" class="btn btn-sm btn-outline-secondary add-to-cart">Añadir al carrito</a>
+                        </div>
+                        <div class="book-item" data-id="6" data-titulo="Orgullo y prejuicio" data-precio="11.75">
+                            <img src="https://via.placeholder.com/150x200" alt="Libro 6" class="img-fluid">
+                            <h3>Orgullo y prejuicio</h3>
+                            <p>Autor: Jane Austen</p>
+                            <p class="price">$11.75</p>
+                            <a href="#" class="btn btn-sm btn-outline-secondary add-to-cart">Añadir al carrito</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="d-flex justify-content-around">
+                        <div class="book-item" data-id="7" data-titulo="El Señor de los Anillos" data-precio="25.99">
+                            <img src="https://via.placeholder.com/150x200" alt="Libro 7" class="img-fluid">
+                            <h3>El Señor de los Anillos</h3>
+                            <p>Autor: J.R.R. Tolkien</p>
+                            <p class="price">$25.99</p>
+                            <a href="#" class="btn btn-sm btn-outline-secondary add-to-cart">Añadir al carrito</a>
+                        </div>
+                        <div class="book-item" data-id="8" data-titulo="Harry Potter y la piedra filosofal" data-precio="10.50">
+                            <img src="https://via.placeholder.com/150x200" alt="Libro 8" class="img-fluid">
+                            <h3>Harry Potter y la piedra filosofal</h3>
+                            <p>Autor: J.K. Rowling</p>
+                            <p class="price">$10.50</p>
+                            <a href="#" class="btn btn-sm btn-outline-secondary add-to-cart">Añadir al carrito</a>
+                        </div>
+                        <div class="book-item">
+                            </div>
+                    </div>
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Anterior</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Siguiente</span>
+            </button>
+        </div>
+    </section>
+   
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2025 LibroStore. Todos los derechos reservados.</p>
+    </footer>
+
+    <script src="scrip.js"></script>
+    
+</body>
+
+</html>

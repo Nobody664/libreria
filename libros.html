@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Libros - LibroStore</title>
+    <link rel="stylesheet" href="style.css">
+
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="logo">LibroStore</div>
+            <ul class="nav-links">
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="libros.html">Libros</a></li>
+                <li><a href="nosotros.html">Nosotros</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+                <li><a href="carritocompras.html">Carrito (<span id="carrito-count">0</span>)</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="container">
+        <section class="book-list-section">
+            <h1>Nuestros Libros</h1>
+            <div class="search-bar">
+                <input type="text" id="search-input" placeholder="Buscar por título o autor...">
+                <button onclick="searchBooks()">Buscar</button>
+            </div>
+            <div class="book-grid" id="book-grid">
+                <div class="book-card">
+                    <img src="https://via.placeholder.com/100x150" alt="Portada del libro">
+                    <h3>Título del Libro 1</h3>
+                    <p>Autor: Autor 1</p>
+                    <button class="view-details-btn">Ver detalles</button>
+                </div>
+                <div class="book-card">
+                    <img src="https://via.placeholder.com/100x150" alt="Portada del libro">
+                    <h3>Título del Libro 2</h3>
+                    <p>Autor: Autor 2</p>
+                    <button class="view-details-btn">Ver detalles</button>
+                </div>
+                </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 LibroStore. Todos los derechos reservados.</p>
+    </footer>
+
+    <script src="script.js"></script> 
+    <script src="libros.js"></script> 
+</body>
+</html>
