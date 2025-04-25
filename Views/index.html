@@ -12,13 +12,13 @@
 <body>
     <header>
         <nav class="navbar">
-            <div class="logo">LibroStore</div>
+            <div class="logo">LibroStore:</div>
             <ul class="nav-links">
                 <li><a href="index.html">Inicio</a></li>
                 <li><a href="libros.html">Libros</a></li>
                 <li><a href="nosotros.html">Nosotros</a></li>
                 <li><a href="contacto.html">Contacto</a></li>
-                <li><a href="#carrito">Carrito (<span id="carrito-count">0</span>)</a></li>
+                <li><a href="carritocompras.html">Carrito (<span id="carrito-count">0</span>)</a></li>
             </ul>
         </nav>
     </header>
@@ -98,22 +98,13 @@
                 <h3>Contacto</h3>
                 <p><img src="/images/phone-icon.png" alt="Teléfono"> (+34) 925 824 496</p>
                 <p><img src="/images/email-icon.png" alt="Email"> paginas@libreriapaginas.com</p>
-                <p><img src="/images/form-icon.png" alt="Formulario"> <a href="#">Formulario de contacto</a></p>
             </div>
-            <div class="footer-column paginas-legales">
-                <h3>Páginas Legales</h3>
-                <ul>
-                    <li><a href="#">Aviso legal</a></li>
-                    <li><a href="#">Condiciones de venta</a></li>
-                    <li><a href="#">Política de privacidad</a></li>
-                    <li><a href="#">Política de Cookies</a></li>
-                </ul>
-            </div>
+            
             <div class="footer-column atencion-cliente">
                 <h3>Atención al cliente</h3>
                 <ul>
-                    <li><a href="#">Quiénes somos</a></li>
-                    <li><a href="#">Pedidos especiales</a></li>
+                    <li><a href="nosotros.html">Quiénes somos</a></li>
+                    <li><a href="carritocompras.html">Pedidos especiales</a></li>
                 </ul>
             </div>
             <div class="footer-column ministerio">
@@ -126,25 +117,7 @@
         </div>
     </footer>
 
-    <script src="/Scripts/carrito.js"></script>
-    <script>
-      document.addEventListener("DOMContentLoaded", () => {
-        const botonesAñadir = document.querySelectorAll(".btn-añadir");
-    
-        botonesAñadir.forEach(boton => {
-          boton.addEventListener("click", () => {
-            const contenedor = boton.closest(".book-item");
-            const producto = {
-              id: contenedor.dataset.id,
-              titulo: contenedor.dataset.titulo,
-              precio: `S/ ${contenedor.dataset.precio}`
-            };
-    
-            agregarAlCarrito(producto);
-          });
-        });
-      });
-    </script>
+    <script src="/Scripts/script.js"></script>
     </body>
 
 </html>

@@ -1,0 +1,142 @@
+/* Estilos para la sección Sobre Nosotros (Diseño Elegante con Cuadritos) */
+.about {
+    padding: 80px 20px;
+    background-color: #f8f8f8; /* Fondo muy claro */
+}
+
+.about .container {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 50px;
+    background-color: #fff;
+    border-radius: 15px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.08); /* Sombra más pronunciada */
+    text-align: center;
+}
+
+.about h2 {
+    color: #333;
+    margin-bottom: 50px;
+    font-size: 3em;
+    font-weight: 600;
+}
+
+.about-intro {
+    margin-bottom: 40px;
+}
+
+.about-intro p {
+    color: #555;
+    line-height: 1.8;
+    font-size: 1.2em;
+}
+
+.about-highlights {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin-bottom: 60px;
+    flex-wrap: wrap;
+}
+
+.highlight-box {
+    background-color: #e0f7fa; /* Fondo claro para los "cuadritos" */
+    border-radius: 10px;
+    padding: 30px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+    width: 250px; /* Ancho fijo para los cuadritos */
+}
+
+.highlight-box i {
+    font-size: 2.5em;
+    color: #007bff; /* Color del icono */
+    margin-bottom: 15px;
+}
+
+.highlight-box h3 {
+    color: #333;
+    font-size: 1.5em;
+    margin-bottom: 10px;
+    font-weight: 500;
+}
+
+.highlight-box p {
+    color: #777;
+    font-size: 1em;
+    line-height: 1.6;
+}
+
+.about h3 {
+    color: #333;
+    font-size: 2em;
+    margin-top: 60px;
+    margin-bottom: 30px;
+    font-weight: 500;
+}
+
+.team-section {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    flex-wrap: wrap;
+}
+
+.team-member {
+    text-align: center;
+}
+
+.team-member img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.team-member h4 {
+    color: #333;
+    font-size: 1.3em;
+    margin-bottom: 5px;
+    font-weight: 500;
+}
+
+.team-member .team-role {
+    color: #777;
+    font-size: 0.95em;
+}
+
+.final-message {
+    color: #555;
+    font-size: 1.2em;
+    margin-top: 60px;
+}
+
+/* Media query para pantallas más pequeñas */
+@media (max-width: 768px) {
+    .about {
+        padding: 60px 10px;
+    }
+
+    .about .container {
+        padding: 30px;
+    }
+
+    .about h2 {
+        font-size: 2.5em;
+        margin-bottom: 40px;
+    }
+
+    .about-highlights {
+        gap: 20px;
+    }
+
+    .highlight-box {
+        width: 100%; /* Ocupar todo el ancho en pantallas pequeñas */
+    }
+
+    .team-section {
+        gap: 20px;
+    }
+}
