@@ -1,0 +1,65 @@
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+  margin: 0;
+  padding: 20px;
+  background-color: #f8f9fa;
+}
+
+h1 {
+  text-align: center;
+}
+
+.carrito-container {
+  max-width: 800px;
+  margin: 0 auto;
+  background-color: #fff;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+.item-carrito {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #ccc;
+  padding: 10px 0;
+}
+
+.item-carrito h3, .item-carrito p {
+  margin: 0;
+}
+
+.total {
+  font-size: 1.3em;
+  text-align: right;
+  margin-top: 20px;
+  font-weight: bold;
+}
+
+.btn-eliminar, .btn-pagar {
+  background-color: #dc3545;
+  color: white;
+  border: none;
+  padding: 8px 15px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.btn-pagar {
+  background-color: #28a745;
+  float: right;
+  margin-top: 20px;
+}
+
+.btn-eliminar:hover, .btn-pagar:hover {
+  opacity: 0.9;
+}
+
+.vacio {
+  text-align: center;
+  margin-top: 40px;
+  font-size: 1.2em;
+  color: #888;
+}

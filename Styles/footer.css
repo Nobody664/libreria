@@ -1,74 +1,166 @@
-/* /Styles/footer.css */
-
+/* Estilos generales para el footer */
 footer {
-    background-color: #282828;
-    color: #eee;
-    padding: 40px 20px; /* Añade un poco de padding general */
-    margin-top: 40px; /* Espacio en la parte superior para separarlo del contenido */
-    font-size: 0.9em;
-    text-align: center; /* Centra el texto por defecto */
+    background-color: #ffffff;
+    padding: 40px 0 20px;
+    color: #333;
+    font-family: 'Arial', sans-serif;
 }
 
-.footer .container {
+footer .container {
     max-width: 1200px;
-    margin: 0 auto; /* Centra el contenedor */
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
-    gap: 30px;
-    text-align: left; /* Alinea el texto de las secciones a la izquierda dentro del contenedor */
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
 }
 
-.footer-company h3,
-.footer-contact h3,
-.footer-social h3 {
-    color: #fff;
-    margin-bottom: 15px;
-    font-size: 1.1em;
+footer h3 {
+    font-size: 18px;
+    margin-bottom: 20px;
+    color: #2c3e50;
+    font-weight: 600;
+    position: relative;
 }
 
-.footer-company p,
-.footer-contact p {
-    margin-bottom: 10px;
-    line-height: 1.6;
+footer h3::after {
+    content: '';
+    position: absolute;
+    bottom: -8px;
+    left: 0;
+    width: 40px;
+    height: 2px;
+    background-color: #e74c3c;
 }
 
-.footer-social {
-    text-align: center; /* Centra los iconos sociales */
+/* Estilos para las columnas */
+.footer-column {
+    margin-bottom: 30px;
+    flex: 1;
+    min-width: 200px;
+    padding-right: 20px;
 }
 
-.footer-social a {
-    display: inline-block;
-    margin: 0 10px;
+/* Estilos para la columna con el logo y redes sociales */
+.logo-social img {
+    max-width: 180px;
+    margin-bottom: 20px;
 }
 
-.footer-social img {
+.social-icons {
+    display: flex;
+    gap: 15px;
+    margin-top: 15px;
+}
+
+.social-icons img {
     width: 30px;
     height: 30px;
-    opacity: 0.7;
-    transition: opacity 0.3s ease;
+    transition: transform 0.3s ease;
 }
 
-.footer-social img:hover {
-    opacity: 1;
+.social-icons a:hover img {
+    transform: scale(1.2);
 }
 
-.footer-copyright {
-    grid-column: 1 / -1; /* Ocupa todo el ancho */
+/* Estilos para la columna de contacto */
+.contacto p {
+    display: flex;
+    align-items: center;
+    margin-bottom: 12px;
+    font-size: 14px;
+}
+
+.contacto img {
+    width: 18px;
+    margin-right: 10px;
+}
+
+.contacto a {
+    color: #e74c3c;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.contacto a:hover {
+    color: #c0392b;
+    text-decoration: underline;
+}
+
+/* Estilos para las columnas con listas */
+.paginas-legales ul,
+.atencion-cliente ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.paginas-legales li,
+.atencion-cliente li {
+    margin-bottom: 10px;
+}
+
+.paginas-legales a,
+.atencion-cliente a {
+    color: #333;
+    text-decoration: none;
+    font-size: 14px;
+    transition: color 0.3s ease;
+    display: inline-block;
+}
+
+.paginas-legales a:hover,
+.atencion-cliente a:hover {
+    color: #e74c3c;
+    transform: translateX(3px);
+}
+
+/* Estilos para la columna del ministerio */
+.ministerio img {
+    max-width: 160px;
+    margin-bottom: 15px;
+}
+
+.ayuda-ministerio {
+    font-size: 12px;
+    line-height: 1.5;
+    font-style: italic;
+    color: #666;
+    max-width: 220px;
+}
+
+/* Estilos para el copyright */
+.copyright {
     text-align: center;
-    margin-top: 30px;
     padding-top: 20px;
-    border-top: 1px solid #444;
+    margin-top: 20px;
+    border-top: 1px solid #ddd;
+    width: 100%;
+    font-size: 13px;
+    color: #777;
 }
 
-/* Media query para diseño responsivo */
+/* Estilos responsivos */
 @media (max-width: 768px) {
-    .footer .container {
-        grid-template-columns: 1fr; /* Una columna en pantallas pequeñas */
-        gap: 20px;
+    footer .container {
+        flex-direction: column;
+    }
+    
+    .footer-column {
+        width: 100%;
+        padding-right: 0;
+        margin-bottom: 30px;
+    }
+    
+    .ministerio {
         text-align: center;
     }
-
-    .footer-social {
-        text-align: center;
+    
+    .ministerio img {
+        margin: 0 auto 15px;
+    }
+    
+    .ayuda-ministerio {
+        max-width: 100%;
     }
 }
